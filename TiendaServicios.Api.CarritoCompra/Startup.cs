@@ -2,8 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AutoMapper;
-using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -13,10 +11,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using TiendaServicios.Api.Libro.Aplicacion;
-using TiendaServicios.Api.Libro.Persistencia;
+using TiendaServicios.Api.CarritoCompra.Aplicacion;
+using TiendaServicios.Api.CarritoCompra.Persistencia;
 
-namespace TiendaServicios.Api.Libro
+
+namespace TiendaServicios.Api.CarritoCompra
 {
     public class Startup
     {
@@ -31,11 +30,13 @@ namespace TiendaServicios.Api.Libro
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddControllers().AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<Nuevo>());
-            services.AddDbContext<ContextoLibro>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("ConnectionString")));
+            services.AddDbContext<ContextoCarrito>(options => options.UseMySQL(Configuration.GetConnectionString("ConnectionString")));
             services.AddMediatR(typeof(Nuevo.Manejador).Assembly);
-            services.AddAutoMapper(typeof(Consulta.Ejecuta));
+            services.AddHttpClient("Libros", config =>
+            {
+                config.BaseAddress = new Uri(Configuration["Services:Libros"]);
+            });
+            services.AddScoped<ILibrosService, LibrosService>();
 
         }
 

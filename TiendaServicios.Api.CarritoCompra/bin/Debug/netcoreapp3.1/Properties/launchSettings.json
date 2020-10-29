@@ -4,7 +4,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:63893",
+      "applicationUrl": "http://localhost:65270",
       "sslPort": 0
     }
   },
@@ -12,15 +12,15 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/LibroMaterial",
+      "launchUrl": "api/CarritoCompras",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "TiendaServicios.Api.Libro": {
+    "TiendaServicios.Api.CarritoCompra": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/LibroMaterial",
+      "launchUrl": "api/CarritoCompras",
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
