@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gyIioDV4cWsVBQrM0/hHD9NVfgApcs542M3djW4wUgh6vO7f9fY0jT8hqVEz26TyOLcCTCq6MxI+E4WquBVxyQ==",
+  "dgSpecHash": "wImZePBSPb1vRe1cfUEE3oEG+/mMsh3fAyS9VCX4KrUzi7aoKXS+x7kTWYQKJy2sQXxXkTR9AorO95lTc94pkQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\WalterJavier.Arce\\source\\repos\\TiendaServicios\\TiendaServicios.Api.Libro.Tests\\TiendaServicios.Api.Libro.Tests.csproj",
   "expectedPackageFiles": [
@@ -22,7 +22,7 @@
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.9\\microsoft.entityframeworkcore.3.1.9.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.9\\microsoft.entityframeworkcore.abstractions.3.1.9.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.9\\microsoft.entityframeworkcore.analyzers.3.1.9.nupkg.sha512",
-    "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\3.1.6\\microsoft.entityframeworkcore.inmemory.3.1.6.nupkg.sha512",
+    "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\3.1.9\\microsoft.entityframeworkcore.inmemory.3.1.9.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.9\\microsoft.entityframeworkcore.relational.3.1.9.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.9\\microsoft.entityframeworkcore.sqlserver.3.1.9.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.9\\microsoft.extensions.caching.abstractions.3.1.9.nupkg.sha512",

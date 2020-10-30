@@ -75,7 +75,7 @@ namespace TiendaServicios.Api.Libro.Tests
         public async void GetLibros()
         {
             //Arrange
-            System.Diagnostics.Debugger.Launch();
+          
             //1 que metodo dentro de la microservice se encarga de realizar la consulta de libros
             //Emular instancia de entity framework core
             //para emular acciones y eventos de un objeto en un ambiente test
@@ -97,6 +97,27 @@ namespace TiendaServicios.Api.Libro.Tests
             Assert.True(lista.Any());
 
         }
+        [Fact]
+        public async void GuardarLibro()
+        {
+            System.Diagnostics.Debugger.Launch();
+            //Arrange
+            var options = new DbContextOptionsBuilder<ContextoLibro>()
+                .UseInMemoryDatabase(databaseName:"BaseDatosLibro")
+                .Options;
 
+            var contexto=new ContextoLibro(options);
+            var request = new Nuevo.Ejecuta();
+            request.Titulo = "Libro de Microservice";
+            request.AutorLibro= Guid.Empty;
+            request.FechaPublicacion = DateTime.Now;
+
+            //Act
+            var manejador = new Nuevo.Manejador(contexto);
+            var libro = await manejador.Handle(request, new System.Threading.CancellationToken());
+
+            //Assert
+           Assert.True(libro!=null);
+        }
     }
 }
