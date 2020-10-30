@@ -36,6 +36,7 @@ namespace TiendaServicios.Api.Libro
                 options.UseSqlServer(Configuration.GetConnectionString("ConnectionString")));
             services.AddMediatR(typeof(Nuevo.Manejador).Assembly);
             services.AddAutoMapper(typeof(Consulta.Ejecuta));
+            services.AddAutoMapper(typeof(ConsultaFiltro.Manejador));
 
         }
 

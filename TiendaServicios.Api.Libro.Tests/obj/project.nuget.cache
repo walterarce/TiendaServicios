@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RY/p9f45aOHjrf9i/k8LygDZa6MnKT9BsMKVghiJYaFlLTHdkhFfqQpfJvjFFX2oDxbhHvllczs7xu2r+a7CMg==",
+  "dgSpecHash": "gyIioDV4cWsVBQrM0/hHD9NVfgApcs542M3djW4wUgh6vO7f9fY0jT8hqVEz26TyOLcCTCq6MxI+E4WquBVxyQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\WalterJavier.Arce\\source\\repos\\TiendaServicios\\TiendaServicios.Api.Libro.Tests\\TiendaServicios.Api.Libro.Tests.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.9\\microsoft.entityframeworkcore.3.1.9.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.9\\microsoft.entityframeworkcore.abstractions.3.1.9.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.9\\microsoft.entityframeworkcore.analyzers.3.1.9.nupkg.sha512",
+    "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\3.1.6\\microsoft.entityframeworkcore.inmemory.3.1.6.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.9\\microsoft.entityframeworkcore.relational.3.1.9.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.9\\microsoft.entityframeworkcore.sqlserver.3.1.9.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.9\\microsoft.extensions.caching.abstractions.3.1.9.nupkg.sha512",
@@ -48,9 +49,10 @@
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.testplatform.testhost\\16.5.0\\microsoft.testplatform.testhost.16.5.0.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
-    "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\moq\\4.14.7\\moq.4.14.7.nupkg.sha512",
+    "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\moq\\4.14.5\\moq.4.14.5.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
+    "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\nsubstitute\\4.2.2\\nsubstitute.4.2.2.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

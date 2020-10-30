@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using AutoMapper;
 using Moq;
 using TiendaServicios.Api.Libro.Aplicacion;
@@ -41,21 +42,45 @@ namespace TiendaServicios.Api.Libro.Tests
             dbSet.As<IAsyncEnumerable<LibreriaMaterial>>()
                 .Setup(x => x.GetAsyncEnumerator(new System.Threading.CancellationToken()))
                 .Returns(new AsyncEnumerator<LibreriaMaterial>(DataPrueba.GetEnumerator()));
+
+            dbSet.As<IQueryable<LibreriaMaterial>>().Setup(x => x.Provider)
+                .Returns(new AsyncQueryProvider<LibreriaMaterial>(DataPrueba.Provider)); //necesario pra hacer filtros por parametro
             var contexto = new Mock<ContextoLibro>();
 
             contexto.Setup(x => x.LibreriaMaterial).Returns(dbSet.Object);
 
             return contexto;
         }
+
+        [Fact]
+        public async void GetLibroPorId()
+        {
+            //Arrange
+            var mockContexto = CrearContexto();
+            var mapConfig = new MapperConfiguration(cfg=>cfg.AddProfile(new MappingTest()));
+            var mapper = mapConfig.CreateMapper();
+            var request = new ConsultaFiltro.LibroUnico();
+            request.LibroId = Guid.Empty;
+
+            //Act
+            var manejador = new ConsultaFiltro.Manejador(mockContexto.Object, mapper);
+
+            var libro = await manejador.Handle(request, new System.Threading.CancellationToken());
+
+            //Assert
+            Assert.NotNull(libro);
+            Assert.True(libro.LibreriaMaterialId==Guid.Empty);
+        }
         [Fact]
         public async void GetLibros()
         {
+            //Arrange
+            System.Diagnostics.Debugger.Launch();
             //1 que metodo dentro de la microservice se encarga de realizar la consulta de libros
             //Emular instancia de entity framework core
             //para emular acciones y eventos de un objeto en un ambiente test
             //utilizamos objetos del tipo mock (representa a cualquier elemento de codigo)
             var mockContexto = CrearContexto(); // new Mock<ContextoLibro>();
-
             //2 se necesita emular al mapping Imapper
 
             var mapConfig =new MapperConfiguration(cfg => cfg.AddProfile(new MappingTest())); //new Mock<IMapper>();
@@ -63,12 +88,14 @@ namespace TiendaServicios.Api.Libro.Tests
             var mapper = mapConfig.CreateMapper();
 
             //3 se debe instanciar la clase manejador y ponerle como parametro los mock creados
-
+            //ACT
             Consulta.Manejador manejador = new Consulta.Manejador(mockContexto.Object, mapper);
-
             Consulta.Ejecuta request = new Consulta.Ejecuta();
-
             var lista =await manejador.Handle(request, new System.Threading.CancellationToken());
+
+            //Assert
+            Assert.True(lista.Any());
+
         }
 
     }

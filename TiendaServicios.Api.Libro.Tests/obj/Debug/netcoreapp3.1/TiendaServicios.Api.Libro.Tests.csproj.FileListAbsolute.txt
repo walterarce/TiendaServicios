@@ -148,3 +148,5 @@ C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Libr
 C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Libro.Tests\obj\Debug\netcoreapp3.1\TiendaServicios.Api.Libro.Tests.pdb
 C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Libro.Tests\bin\Debug\netcoreapp3.1\GenFu.dll
 C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Libro.Tests\obj\Debug\netcoreapp3.1\TiendaServicios.Api.Libro.Tests.csproj.CoreCompileInputs.cache
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Libro.Tests\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Libro.Tests\bin\Debug\netcoreapp3.1\NSubstitute.dll

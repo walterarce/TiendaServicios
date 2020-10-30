@@ -1,0 +1,6 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=380629a6_002D2319_002D4fde_002Da9d8_002D4f5af161680e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetLibroPorId" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5D3190C-4E89-4F51-8A9B-35FBD76F1297::.NETCoreApp,Version=v3.1::TiendaServicios.Api.Libro.Tests.LibrosServiceTest.GetLibroPorId&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
