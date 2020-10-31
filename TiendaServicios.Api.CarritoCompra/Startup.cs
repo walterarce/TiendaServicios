@@ -29,14 +29,14 @@ namespace TiendaServicios.Api.CarritoCompra
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddScoped<ILibrosService, LibrosService>();
             services.AddDbContext<ContextoCarrito>(options => options.UseMySQL(Configuration.GetConnectionString("ConnectionString")));
             services.AddMediatR(typeof(Nuevo.Manejador).Assembly);
             services.AddHttpClient("Libros", config =>
             {
                 config.BaseAddress = new Uri(Configuration["Services:Libros"]);
             });
-            services.AddScoped<ILibrosService, LibrosService>();
+            services.AddControllers();
 
         }
 
