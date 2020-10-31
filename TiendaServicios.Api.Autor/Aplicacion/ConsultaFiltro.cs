@@ -30,7 +30,7 @@ namespace TiendaServicios.Api.Autor.Aplicacion
             }
             public async Task<AutorDto> Handle(AutorUnico request, CancellationToken cancellationToken)
             {
-                var autorencontrado = await _contexto.AutorLibros.Where(x => x.AutorLibroGuid == request.AutorGuid).FirstAsync();
+                var autorencontrado = await _contexto.AutorLibro.Where(x => x.AutorLibroGuid == request.AutorGuid).FirstAsync();
 
                 
                 if (autorencontrado == null)

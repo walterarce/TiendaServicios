@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wImZePBSPb1vRe1cfUEE3oEG+/mMsh3fAyS9VCX4KrUzi7aoKXS+x7kTWYQKJy2sQXxXkTR9AorO95lTc94pkQ==",
+  "dgSpecHash": "qbLs/cRq760zCxAMnvOd3DZdvTKvFz+h5K7if0Xg2MsHiJRXXjQvwZTKgc52IDaOa5VlJvrvDqEDaSRGZH7WXQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\WalterJavier.Arce\\source\\repos\\TiendaServicios\\TiendaServicios.Api.Libro.Tests\\TiendaServicios.Api.Libro.Tests.csproj",
   "expectedPackageFiles": [
@@ -47,6 +47,7 @@
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.testplatform.objectmodel\\16.5.0\\microsoft.testplatform.objectmodel.16.5.0.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.testplatform.testhost\\16.5.0\\microsoft.testplatform.testhost.16.5.0.nupkg.sha512",
+    "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\moq\\4.14.5\\moq.4.14.5.nupkg.sha512",

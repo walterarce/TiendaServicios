@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "U4Nxc/YjokHTV1w5A5b2bg2zpaCf6zXw07OsIdSHbXudOeRlJSmQxT0Gi0pGfm1Ugkvvs60Q64Ps2wM64QAF4w==",
+  "dgSpecHash": "DGu2mI2nM0Qg/295TX0288XDe9zVe4bTV0nGIKx+S0Savl4lLx1kf2CIZHNipRDSwdL2HLzTnJSyZfte3IjsXg==",
   "success": true,
   "projectFilePath": "C:\\Users\\WalterJavier.Arce\\source\\repos\\TiendaServicios\\TiendaServicios.Api.Autor\\TiendaServicios.Api.Autor.csproj",
   "expectedPackageFiles": [
@@ -31,6 +31,7 @@
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.9\\microsoft.extensions.logging.abstractions.3.1.9.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.extensions.options\\3.1.9\\microsoft.extensions.options.3.1.9.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512",
+    "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\npgsql\\4.1.3.1\\npgsql.4.1.3.1.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\3.1.4\\npgsql.entityframeworkcore.postgresql.3.1.4.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",

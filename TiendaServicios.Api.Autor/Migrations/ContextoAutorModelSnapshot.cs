@@ -40,7 +40,7 @@ namespace TiendaServicios.Api.Autor.Migrations
 
                     b.HasKey("AutorLibroId");
 
-                    b.ToTable("AutorLibros");
+                    b.ToTable("AutorLibro");
                 });
 
             modelBuilder.Entity("TiendaServicios.Api.Autor.Modelo.GradoAcademico", b =>
@@ -69,7 +69,7 @@ namespace TiendaServicios.Api.Autor.Migrations
 
                     b.HasIndex("AutorLibroId");
 
-                    b.ToTable("GradoAcademicos");
+                    b.ToTable("GradoAcGradoAcademico");
                 });
 
             modelBuilder.Entity("TiendaServicios.Api.Autor.Modelo.GradoAcademico", b =>

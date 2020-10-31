@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "g+fDTg8oWCo9W0iashzMoNm3c+082+BmsZUXnTcDJLUwjZWzOre+k4uZOzIDPUbFWZS2PBRv+K5yPs+6yCgi3Q==",
+  "dgSpecHash": "dM62e0IhremrKvUrxc2B5hYnlmx8h9s+2SEjxxenw9nw4VuNJJ7ZW+HdADt4PXIMeWuXTP19s6MNTKVM6EEi8w==",
   "success": true,
   "projectFilePath": "C:\\Users\\WalterJavier.Arce\\source\\repos\\TiendaServicios\\TiendaServicios.Api.Libro\\TiendaServicios.Api.Libro.csproj",
   "expectedPackageFiles": [
@@ -41,6 +41,7 @@
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.identitymodel.tokens\\5.5.0\\microsoft.identitymodel.tokens.5.5.0.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
     "C:\\Users\\WalterJavier.Arce\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",

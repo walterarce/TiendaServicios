@@ -15,9 +15,9 @@ namespace TiendaServicios.Api.Autor.Persistencia
             
         }
 
-        public DbSet<AutorLibro> AutorLibros { get; set; }
+        public DbSet<AutorLibro> AutorLibro { get; set; }
 
-        public DbSet<GradoAcademico> GradoAcademicos { get; set; }
+        public DbSet<GradoAcademico> GradoAcGradoAcademico { get; set; }
 
   
     }

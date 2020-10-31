@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TiendaServicios.Api.Autor", "TiendaServicios.Api.Autor\TiendaServicios.Api.Autor.csproj", "{F32D1546-7BB6-4901-B6FC-2B3452F9D218}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaServicios.Api.Libro", "TiendaServicios.Api.Libro\TiendaServicios.Api.Libro.csproj", "{378CCD69-82B8-4C59-8794-564E9FB6C801}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TiendaServicios.Api.Libro", "TiendaServicios.Api.Libro\TiendaServicios.Api.Libro.csproj", "{378CCD69-82B8-4C59-8794-564E9FB6C801}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaServicios.Api.CarritoCompra", "TiendaServicios.Api.CarritoCompra\TiendaServicios.Api.CarritoCompra.csproj", "{690ACBC0-1BAB-409E-8660-2862AE1D03A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TiendaServicios.Api.CarritoCompra", "TiendaServicios.Api.CarritoCompra\TiendaServicios.Api.CarritoCompra.csproj", "{690ACBC0-1BAB-409E-8660-2862AE1D03A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaServicios.Api.Libro.Tests", "TiendaServicios.Api.Libro.Tests\TiendaServicios.Api.Libro.Tests.csproj", "{B5D3190C-4E89-4F51-8A9B-35FBD76F1297}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TiendaServicios.Api.Libro.Tests", "TiendaServicios.Api.Libro.Tests\TiendaServicios.Api.Libro.Tests.csproj", "{B5D3190C-4E89-4F51-8A9B-35FBD76F1297}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{471D2743-36ED-47D4-82EB-1165F4C62248}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B5D3190C-4E89-4F51-8A9B-35FBD76F1297}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5D3190C-4E89-4F51-8A9B-35FBD76F1297}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5D3190C-4E89-4F51-8A9B-35FBD76F1297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{471D2743-36ED-47D4-82EB-1165F4C62248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{471D2743-36ED-47D4-82EB-1165F4C62248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{471D2743-36ED-47D4-82EB-1165F4C62248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{471D2743-36ED-47D4-82EB-1165F4C62248}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

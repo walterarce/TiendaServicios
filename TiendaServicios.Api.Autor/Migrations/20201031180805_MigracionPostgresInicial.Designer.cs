@@ -10,7 +10,7 @@ using TiendaServicios.Api.Autor.Persistencia;
 namespace TiendaServicios.Api.Autor.Migrations
 {
     [DbContext(typeof(ContextoAutor))]
-    [Migration("20201021153200_MigracionPostgresInicial")]
+    [Migration("20201031180805_MigracionPostgresInicial")]
     partial class MigracionPostgresInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,7 +42,7 @@ namespace TiendaServicios.Api.Autor.Migrations
 
                     b.HasKey("AutorLibroId");
 
-                    b.ToTable("AutorLibros");
+                    b.ToTable("AutorLibro");
                 });
 
             modelBuilder.Entity("TiendaServicios.Api.Autor.Modelo.GradoAcademico", b =>
@@ -71,7 +71,7 @@ namespace TiendaServicios.Api.Autor.Migrations
 
                     b.HasIndex("AutorLibroId");
 
-                    b.ToTable("GradoAcademicos");
+                    b.ToTable("GradoAcGradoAcademico");
                 });
 
             modelBuilder.Entity("TiendaServicios.Api.Autor.Modelo.GradoAcademico", b =>

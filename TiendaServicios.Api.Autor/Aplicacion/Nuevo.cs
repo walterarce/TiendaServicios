@@ -49,7 +49,7 @@ namespace TiendaServicios.Api.Autor.Aplicacion
                     Apellido = request.Apellido,
                     AutorLibroGuid = Convert.ToString(Guid.NewGuid())
                 };
-                _Contexto.AutorLibros.Add(autorLibro);
+                _Contexto.AutorLibro.Add(autorLibro);
                 var valor  = await _Contexto.SaveChangesAsync();
                 if (valor > 0)
                 { return Unit.Value; }

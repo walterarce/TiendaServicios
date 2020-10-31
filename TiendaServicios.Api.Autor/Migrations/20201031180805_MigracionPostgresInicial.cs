@@ -9,7 +9,7 @@ namespace TiendaServicios.Api.Autor.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "AutorLibros",
+                name: "AutorLibro",
                 columns: table => new
                 {
                     AutorLibroId = table.Column<int>(nullable: false)
@@ -21,11 +21,11 @@ namespace TiendaServicios.Api.Autor.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AutorLibros", x => x.AutorLibroId);
+                    table.PrimaryKey("PK_AutorLibro", x => x.AutorLibroId);
                 });
 
             migrationBuilder.CreateTable(
-                name: "GradoAcademicos",
+                name: "GradoAcGradoAcademico",
                 columns: table => new
                 {
                     GraadoAcademicoId = table.Column<int>(nullable: false)
@@ -38,28 +38,28 @@ namespace TiendaServicios.Api.Autor.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_GradoAcademicos", x => x.GraadoAcademicoId);
+                    table.PrimaryKey("PK_GradoAcGradoAcademico", x => x.GraadoAcademicoId);
                     table.ForeignKey(
-                        name: "FK_GradoAcademicos_AutorLibros_AutorLibroId",
+                        name: "FK_GradoAcGradoAcademico_AutorLibro_AutorLibroId",
                         column: x => x.AutorLibroId,
-                        principalTable: "AutorLibros",
+                        principalTable: "AutorLibro",
                         principalColumn: "AutorLibroId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_GradoAcademicos_AutorLibroId",
-                table: "GradoAcademicos",
+                name: "IX_GradoAcGradoAcademico_AutorLibroId",
+                table: "GradoAcGradoAcademico",
                 column: "AutorLibroId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "GradoAcademicos");
+                name: "GradoAcGradoAcademico");
 
             migrationBuilder.DropTable(
-                name: "AutorLibros");
+                name: "AutorLibro");
         }
     }
 }

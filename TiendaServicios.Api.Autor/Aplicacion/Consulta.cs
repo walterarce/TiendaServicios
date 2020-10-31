@@ -29,7 +29,7 @@ namespace TiendaServicios.Api.Autor.Aplicacion
             }
             public async Task<List<AutorDto>> Handle(ListaAutor request, CancellationToken cancellationToken)
             {
-                var autores = await _Contexto.AutorLibros.ToListAsync();
+                var autores = await _Contexto.AutorLibro.ToListAsync();
                 var autoresDto = _mapper.Map<List<AutorLibro>,List<AutorDto>>(autores);
 
                 return autoresDto;
