@@ -22,7 +22,7 @@ namespace TiendaServicios.Api.Libro.Controllers
         }
         [HttpPost]
         public async Task<ActionResult<Unit>> Crear(Nuevo.Ejecuta data)
-        {
+        {//me mando un comentario en vano
             return await _mediator.Send(data);
         }
 
