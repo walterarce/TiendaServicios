@@ -67,3 +67,7 @@ C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Libr
 C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Libro\obj\Debug\netcoreapp3.1\TiendaServicios.Api.Libro.dll
 C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Libro\obj\Debug\netcoreapp3.1\TiendaServicios.Api.Libro.pdb
 C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Libro\obj\Debug\netcoreapp3.1\TiendaServicios.Api.Libro.genruntimeconfig.cache
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Libro\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Libro\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Libro\bin\Debug\netcoreapp3.1\TiendaServicios.RabbitMQ.Bus.dll
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Libro\bin\Debug\netcoreapp3.1\TiendaServicios.RabbitMQ.Bus.pdb

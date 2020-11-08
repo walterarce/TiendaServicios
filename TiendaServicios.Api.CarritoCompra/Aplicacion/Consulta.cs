@@ -3,65 +3,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using AutoMapper;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using TiendaServicios.Api.CarritoCompra.Modelo;
 using TiendaServicios.Api.CarritoCompra.Persistencia;
 
 namespace TiendaServicios.Api.CarritoCompra.Aplicacion
 {
     public class Consulta
     {
-        public class Ejecuta : IRequest<CarritoDto>
+        public class ListaCarrito : IRequest<List<CarritoDtoWithoutList>>
         {
-            public  int CarritoSessionId { get; set; }
-
+            
         }
-
-        public class Manejador : IRequestHandler<Ejecuta, CarritoDto>
+        public class Manejador : IRequestHandler<ListaCarrito, List<CarritoDtoWithoutList>>
         {
-
             private readonly ContextoCarrito _contexto;
 
-            private readonly ILibrosService _libroService;
-            public Manejador(ContextoCarrito contexto, ILibrosService libroservice)
+            private readonly IMapper _mapper;
+            public Manejador(ContextoCarrito contexto , IMapper mapper)
             {
-
                 _contexto = contexto;
-                _libroService = libroservice;
+                _mapper = mapper;
             }
-            public async Task<CarritoDto> Handle(Ejecuta request, CancellationToken cancellationToken)
+          
+
+            public async Task<List<CarritoDtoWithoutList>> Handle(ListaCarrito request, CancellationToken cancellationToken)
             {
-                var carritosession = 
-                    await _contexto.CarritoSession.FirstOrDefaultAsync(x => x.CarritoSessionId == request.CarritoSessionId);
+                var carritos = await _contexto.CarritoSession.ToListAsync();
+                var carritosDto = _mapper.Map<List<CarritoSession>, List<CarritoDtoWithoutList>>(carritos);
 
-                var carritosessiondetalle =
-                    await _contexto.CarritoSessionDetalle.Where(x => x.CarritoSessionId == request.CarritoSessionId).ToListAsync();
-
-                var listacarritodto = new List<CarritoDetalleDTO>();
-                foreach (var libro in carritosessiondetalle)
-                {
-                  var response = await _libroService.GetLibro(new Guid(libro.ProductoSeleccionado));
-
-                  if (response.resultado)
-                  {
-                      var objetolibro = response.libro;
-                      var carritodetalle = new CarritoDetalleDTO()
-                      {
-                          TituloLibro = objetolibro.titulo,
-                          FechaPublicacion = objetolibro.FechaPublicacion,
-                          LibroId =  objetolibro.LibreriaMaterialId
-                      };
-                      listacarritodto.Add(carritodetalle);
-                  }
-                }
-                var carritoSessionDto = new CarritoDto()
-                {
-                    CarritoId = carritosession.CarritoSessionId,
-                    FechaCreacionSession = carritosession.FechaCreacion,
-                    ListaProductos = listacarritodto
-                };
-
-                return carritoSessionDto;
+                return carritosDto;
             }
         }
     }

@@ -16,6 +16,12 @@ using TiendaServicios.Api.Autor.Aplicacion;
 using TiendaServicios.Api.Autor.Persistencia;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using TiendaServicios.Api.Autor.ManejadorRabbit;
+using TiendaServicios.Mensajeria.Email.SendGridLibreria.Implement;
+using TiendaServicios.Mensajeria.Email.SendGridLibreria.Interface;
+using TiendaServicios.RabbitMQ.Bus.BusRabbit;
+using TiendaServicios.RabbitMQ.Bus.EventoQueue;
+using TiendaServicios.RabbitMQ.Bus.Implement;
 
 namespace TiendaServicios.Api.Autor
 {
@@ -31,11 +37,20 @@ namespace TiendaServicios.Api.Autor
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
             services.AddControllers();
             services.AddDbContext<ContextoAutor>(options => options.UseNpgsql(Configuration.GetConnectionString("ConnectionString")));
             services.AddMediatR(typeof(Nuevo.Manejador).Assembly);
             services.AddControllers().AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<Nuevo>());
             services.AddAutoMapper(typeof(Consulta.Manejador));
+            services.AddSingleton<IRabbitEventBus, RabbitEventBus>(sp =>
+            {
+                var scopeFactory = sp.GetRequiredService<IServiceScopeFactory>();
+                return new RabbitEventBus(sp.GetService<IMediator>(), scopeFactory);
+            });
+            services.AddTransient<EmailEventoManejador>();
+            services.AddTransient<IEventoManejador<EmailEventoQueue>, EmailEventoManejador>();
+            services.AddSingleton<ISendGridEnviar, SendGridEnviar>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,6 +69,8 @@ namespace TiendaServicios.Api.Autor
             {
                 endpoints.MapControllers();
             });
+            var eventBus = app.ApplicationServices.GetRequiredService<IRabbitEventBus>();
+            eventBus.Subscribe<EmailEventoQueue, EmailEventoManejador>();
         }
     }
 }

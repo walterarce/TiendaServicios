@@ -1,0 +1,4 @@
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Libro.Tests\obj\Debug\netcoreapp3.1\TiendaServicios.Api.Libro.Tests.csprojAssemblyReference.cache
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Libro.Tests\obj\Debug\netcoreapp3.1\TiendaServicios.Api.Libro.Tests.AssemblyInfoInputs.cache
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Libro.Tests\obj\Debug\netcoreapp3.1\TiendaServicios.Api.Libro.Tests.AssemblyInfo.cs
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Libro.Tests\obj\Debug\netcoreapp3.1\TiendaServicios.Api.Libro.Tests.csproj.CoreCompileInputs.cache

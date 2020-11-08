@@ -29,3 +29,4 @@ C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Gate
 C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Gateway\obj\Debug\netcoreapp3.1\TiendaServicios.Api.Gateway.dll
 C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Gateway\obj\Debug\netcoreapp3.1\TiendaServicios.Api.Gateway.pdb
 C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Gateway\obj\Debug\netcoreapp3.1\TiendaServicios.Api.Gateway.genruntimeconfig.cache
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Gateway\obj\Debug\netcoreapp3.1\TiendaServicios.Api.Gateway.csprojAssemblyReference.cache
