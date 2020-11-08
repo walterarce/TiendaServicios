@@ -9,6 +9,8 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using TiendaServicios.Api.Libro.Modelo;
 using TiendaServicios.Api.Libro.Persistencia;
+using TiendaServicios.RabbitMQ.Bus.BusRabbit;
+using TiendaServicios.RabbitMQ.Bus.EventoQueue;
 
 namespace TiendaServicios.Api.Libro.Aplicacion
 {
@@ -36,10 +38,11 @@ namespace TiendaServicios.Api.Libro.Aplicacion
         public class Manejador : IRequestHandler<Ejecuta>
         {
             private readonly ContextoLibro _contexto;
-
-            public Manejador(ContextoLibro contexto)
+            private readonly IRabbitEventBus _rabbitEventBus;
+            public Manejador(ContextoLibro contexto, IRabbitEventBus rabbitEventBus)
             {
                 _contexto = contexto;
+                _rabbitEventBus = rabbitEventBus;
             }
             public async Task<Unit> Handle(Ejecuta request, CancellationToken cancellationToken)
             {
@@ -51,6 +54,9 @@ namespace TiendaServicios.Api.Libro.Aplicacion
                 
                  _contexto.LibreriaMaterial.Add(Libronuevo);
                  var value = await _contexto.SaveChangesAsync();
+
+                _rabbitEventBus.Publish(new EmailEventoQueue("walterarce@gmail.com", request.Titulo, "esto es un ejemplo"));
+
                 if (value >0)
                 {
                     return Unit.Value;

@@ -48,3 +48,12 @@ C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Auto
 C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Autor\obj\Debug\netcoreapp3.1\TiendaServicios.Api.Autor.dll
 C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Autor\obj\Debug\netcoreapp3.1\TiendaServicios.Api.Autor.pdb
 C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Autor\obj\Debug\netcoreapp3.1\TiendaServicios.Api.Autor.genruntimeconfig.cache
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Autor\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Autor\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Autor\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Autor\bin\Debug\netcoreapp3.1\TiendaServicios.RabbitMQ.Bus.dll
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Autor\bin\Debug\netcoreapp3.1\TiendaServicios.RabbitMQ.Bus.pdb
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Autor\bin\Debug\netcoreapp3.1\SendGrid.dll
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Autor\bin\Debug\netcoreapp3.1\StarkbankEcdsa.dll
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Autor\bin\Debug\netcoreapp3.1\TiendaServicios.Mensajeria.Email.dll
+C:\Users\WalterJavier.Arce\source\repos\TiendaServicios\TiendaServicios.Api.Autor\bin\Debug\netcoreapp3.1\TiendaServicios.Mensajeria.Email.pdb
